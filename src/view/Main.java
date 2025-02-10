@@ -12,6 +12,7 @@ public class Main {
 		System.out.println(pedido.exibirEstadoPedido());
 		pedido.confirmarEntrega();
 		System.out.println(pedido.exibirEstadoPedido());
+		pedido.cancelarPedido();
 
 		System.out.println("--------------------------------------------------------");
 
@@ -19,6 +20,8 @@ public class Main {
 		pedido2.prepararPedido();
 		System.out.println(pedido2.exibirEstadoPedido());
 		pedido2.confirmarEntrega();
+		System.out.println(pedido2.exibirEstadoPedido());
+		pedido2.cancelarPedido();
 		System.out.println(pedido2.exibirEstadoPedido());
 	}
 

@@ -20,6 +20,7 @@ class PedidoNovo implements EstadoPedido {
 	@Override
 	public void cancelarPedido(Pedido pedido) {
 		System.out.println("Pedido #" + pedido.getIdPedido() + " cancelado com sucesso!");
+		pedido.setEstado(new PedidoCancelado());
 	}
 
 	@Override

@@ -20,6 +20,7 @@ class PedidoEmPreparo implements EstadoPedido {
 	@Override
 	public void cancelarPedido(Pedido pedido) {
 		System.out.println("Pedido #" + pedido.getIdPedido() + " cancelado. Taxa de preparo será cobrada.");
+		pedido.setEstado(new PedidoCancelado());
 	}
 
 	@Override
